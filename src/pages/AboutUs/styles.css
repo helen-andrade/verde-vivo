@@ -20,3 +20,47 @@
   --gray-light-1: #e0e0e0;
   --gray-light-2: #b0bec5;
 }
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza todo o conteúdo */
+  max-width: 900px; /* Mantém o texto alinhado e bem distribuído */
+  margin: auto;
+  text-align: center; /* Centraliza o texto */
+}
+
+.aboutUsTitle {
+  margin-top: 50px;
+  font-size: 50px;
+  color: var(--green-dark-1);
+}
+
+.aboutUsText {
+  color: var(--green-dark-2);
+  font-size: 20px;
+  text-align: center;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+.aboutUsImages {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 50px;
+  flex-wrap: wrap; 
+}
+
+.aboutUsImages img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.aboutUsImages img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
