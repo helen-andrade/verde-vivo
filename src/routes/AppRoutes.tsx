@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import HomePage from "../pages/HomePage";
 import AboutUs from "../pages/AboutUs";
 import Contacts from "../pages/Contacts";
@@ -9,8 +9,8 @@ export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />} />
-        <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/Navbar" element={<Navbar />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Contacts" element={<Contacts />} />
         <Route path="/Menu" element={<Menu />} />

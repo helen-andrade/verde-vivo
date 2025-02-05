@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import "./styles.css";
 import otherImages from "../../assets/salad2/05.png";
 import Footer from "../../components/Footer/Footer";

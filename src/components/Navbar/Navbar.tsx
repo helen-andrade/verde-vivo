@@ -1,5 +1,5 @@
-import "../App.css";
-import imgTitle from "../assets/ImageTitle/cha-verde.png";
+import "./Styles.css"
+import imgTitle from "../../assets/ImageTitle/cha-verde.png";
 
 const Navbar = () => {
   return (
