@@ -1,8 +1,6 @@
 import Navbar from "../../components/Navbar";
-import imageOne from "../../assets/otherImages/06.jpg";
-import imageSecond from "../../assets/otherImages/07.jpg";
-import imageThirty from "../../assets/otherImages/08.jpg";
 import "./styles.css";
+import Footer from "../../components/Footer/Footer";
 
 const AboutUs = () => {
   return (
@@ -30,12 +28,8 @@ const AboutUs = () => {
           quem deseja nutrir o corpo e a mente com o que há de melhor na
           natureza. <br /> 🌿 Viva saudável, viva natural, Viva Verde!
         </p>
-        <div className="aboutUsImages">
-          <img className="imageAboutUs" src={imageOne} alt="Imagem de vegetais" />
-          <img className="imageAboutUs" src={imageSecond} alt="Imagem de vegetais" />
-          <img className="imageAboutUs" src={imageThirty} alt="Imagem de vegetais" />
-        </div>
       </div>
+      <Footer />
     </div>
   );
 };

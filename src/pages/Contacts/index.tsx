@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Navbar from "../../components/Navbar"
 import "./styles.css"
 
@@ -6,6 +7,7 @@ const Contacts = () => {
     <div>
       <Navbar/>
       <p>Contacts</p>
+      <Footer/>
     </div>
   )
 }
