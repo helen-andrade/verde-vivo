@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="titleAndImage">
         <h1 className="title">
-          <a href="/HomePage">VerdeVivo</a>
+          <a href="/">VerdeVivo</a>
         </h1>
         <img
           className="imgHome"
@@ -15,7 +15,7 @@ const Navbar = () => {
         />
       </div>
       <ul className="navbarContainer">
-        <a href="/HomePage">
+        <a href="/">
           <li>Home</li>
         </a>
         <a href="/AboutUs">
