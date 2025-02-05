@@ -24,7 +24,7 @@ const HomePage = () => {
         </div>
         <img className="imageHome" src={otherImages} alt="Imagem de vegetais" />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

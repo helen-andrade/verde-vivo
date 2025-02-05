@@ -1,15 +1,15 @@
-import Navbar from "../../components/Navbar/Navbar"
-import "./styles.css"
-import Footer from "../../components/Footer/Footer"
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import "./styles.css";
 
 const Menu = () => {
   return (
     <div>
-      <Navbar/>
-      <p>Menu</p>
-      <Footer/>
+      <Navbar />
+      <div className="menu"></div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
