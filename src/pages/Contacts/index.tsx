@@ -4,6 +4,7 @@ import "../../../public/icons/instagram.svg";
 import "../../../public/icons/facebook.svg";
 import "../../../public/icons/whatsapp.svg";
 import "../../../public/icons/email.svg";
+
 import "./styles.css";
 
 const Contacts = () => {

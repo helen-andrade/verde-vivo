@@ -20,3 +20,12 @@
   --gray-light-1: #e0e0e0;
   --gray-light-2: #b0bec5;
 }
+
+.menuTitle {
+  color: var(--green-dark-3);
+  font-size: 25px;
+  width: 950px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 500px;
+}

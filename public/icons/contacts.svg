@@ -1,0 +1,10 @@
+<svg 
+    role="img" 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="24" 
+    height="24" 
+    viewBox="0 0 24 24" 
+    fill="#4CAF50">
+    <title>Contacts</title>
+    <path d="M19.998 3.001h-16c-1.104 0-2 .896-2 2v14c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2v-14c0-1.104-.896-2-2-2zm-7.999 14c-2.762 0-5-2.238-5-5s2.238-5 5-5 5 2.238 5 5-2.238 5-5 5zm8-8h-2v-2h2v2z"/>
+</svg>

@@ -26,7 +26,6 @@
     align-items: center;
     justify-content: center;
     gap: 70px;
-    margin-top: 100px;
 }
 
 .textHomePage {
@@ -51,4 +50,27 @@
 .imageHome {
     width: 900px;
     border-radius: 50%;
+    margin-top: 100px;
+}
+
+.place-order-button,
+.place-order-button a {
+    border: none;
+    text-decoration: none;
+    color: var(--green-dark-3);
+    border-radius: 8px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.place-order-button a {
+    box-shadow: 0 0 10px var(--green-dark-3);
+}
+
+.place-order-button a:hover {
+    color: var(--beige-5);
+    background-color: var(--green-dark-1);
 }

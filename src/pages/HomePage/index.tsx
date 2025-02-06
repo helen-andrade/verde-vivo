@@ -21,6 +21,9 @@ const HomePage = () => {
             aqui para te ajudar nessa jornada! Explore, experimente e sinta-se
             bem!
           </p>
+          <div className="place-order-button">
+            <a href="/Menu">Fazer pedido</a>
+          </div>
         </div>
         <img className="imageHome" src={otherImages} alt="Imagem de vegetais" />
       </div>
