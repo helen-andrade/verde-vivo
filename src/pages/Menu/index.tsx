@@ -1,5 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import "../../../public/icons/bag.svg";
+import "../../../public/icons/downArrow.svg";
+
 import "./styles.css";
 
 const Menu = () => {
@@ -15,7 +18,25 @@ const Menu = () => {
         </p>
       </div>
 
-      <div className="menuCategories"></div>
+      <div className="menuCategories">
+        <ul className="categoriesFoods">
+          <li>
+            <a href="#">Saladas proteicas</a>
+          </li>
+          <li>
+            <a href="#">Saladas +pedidas</a>
+          </li>
+          <li>
+            <a href="#">Proteínas</a>
+          </li>
+          <li>
+            <a href="#">Suco verde</a>
+          </li>
+          <li>
+            <a href="#">Carboidratos</a>
+          </li>
+        </ul>
+      </div>
 
       <div className="menuOptions"></div>
       <Footer />

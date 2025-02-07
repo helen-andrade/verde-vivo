@@ -29,3 +29,33 @@
   margin-top: 50px;
   margin-left: 500px;
 }
+
+.categoriesFoods {
+  margin-top: 100px;
+  margin-left: 300px;
+  list-style: none;
+  font-size: 25px;
+  color: var(--green-dark-1);
+  display: flex;
+}
+
+.categoriesFoods li {
+  background-color: var(--beige-1);
+  margin: 30px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 10px var(--green-dark-3);
+  cursor: pointer;
+}
+
+.categoriesFoods a {
+  text-decoration: none;
+  color: var(--green-dark-1);
+}
+
+.categoriesFoods li:hover {
+  color: var(--green-dark-3);
+  box-shadow: 0 0 10px var(--green-dark-2);
+  transform: scale(1.1);
+}
