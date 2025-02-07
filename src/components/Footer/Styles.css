@@ -49,6 +49,12 @@
   color: var(--green-dark-2);
 }
 
+.buttonLinks {
+  border: none;
+  background-color: var(--green-dark-1);
+  font-size: 15px;
+}
+
 .footerSection ul {
   list-style: none;
   padding: 0;
@@ -58,7 +64,8 @@
   margin: 5px 0;
 }
 
-.footerSection a {
+.footerSection a,
+button {
   color: var(--beige-1);
   text-decoration: none;
   transition: 0.3s;
@@ -72,4 +79,52 @@
   margin-top: 15px;
   font-size: 20px;
   opacity: 0.7;
+}
+
+.modal {
+  background-color: var(--beige-1);
+  color: var(--green-dark-1);
+  box-shadow: 0 0 10px var(--green-dark-3);
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modalContent p {
+  font-size: 20px;
+  padding: 30px;
+  text-align: justify;
+}
+
+.buttonLinks:hover {
+  color: var(--green-dark-2);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeModalButton {
+  border: none;
+  background-color: var(--green-dark-1);
+  box-shadow: 0 0 2px var(--beige-1);
+  padding: 5px;
+  font-size: 20px;
+}
+
+.closeModalButton:hover {
+  color: #ff0000;
+  transition: 0.4s;
 }
