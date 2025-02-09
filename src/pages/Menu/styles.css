@@ -44,12 +44,11 @@
 }
 
 .categoriesFoods li {
-  background-color: var(--beige-1);
   margin: 30px;
   width: 200px;
   text-align: center;
   padding: 10px;
-  box-shadow: 0 0 10px var(--green-dark-3);
+  box-shadow: 0 0 2px var(--green-dark-1);
   cursor: pointer;
 }
 
@@ -59,7 +58,5 @@
 }
 
 .categoriesFoods li:hover {
-  color: var(--green-dark-3);
-  box-shadow: 0 0 10px var(--green-dark-2);
   transform: scale(1.1);
 }

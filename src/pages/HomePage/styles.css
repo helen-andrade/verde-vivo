@@ -57,8 +57,7 @@
 .place-order-button a {
     border: none;
     text-decoration: none;
-    color: var(--green-dark-3);
-    border-radius: 8px;
+    color: var(--green-dark-1);
     font-size: 25px;
     cursor: pointer;
     padding: 10px;
@@ -67,10 +66,9 @@
 }
 
 .place-order-button a {
-    box-shadow: 0 0 10px var(--green-dark-3);
+    box-shadow: 0 0 2px var(--green-dark-1);
 }
 
-.place-order-button a:hover {
-    color: var(--beige-5);
-    background-color: var(--green-dark-1);
+.place-order-button:hover {
+    transform: scale(1.1);
 }
