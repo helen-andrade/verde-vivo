@@ -38,18 +38,20 @@
   margin-top: 100px;
   margin-left: 300px;
   list-style: none;
-  font-size: 25px;
   color: var(--green-dark-1);
   display: flex;
 }
 
-.categoriesFoods li {
+.categoriesFoods button {
+  background-color: #fff;
+  font-size: 25px;
   margin: 30px;
   width: 200px;
   text-align: center;
   padding: 10px;
   box-shadow: 0 0 2px var(--green-dark-1);
   cursor: pointer;
+  border: none;
 }
 
 .categoriesFoods a {
@@ -57,6 +59,41 @@
   color: var(--green-dark-1);
 }
 
-.categoriesFoods li:hover {
+.categoriesFoods button:hover {
   transform: scale(1.1);
+}
+
+.modalOverlay {
+  background-color: var(--green-light-2);
+  width: 50%;
+  margin: 200px;
+  margin-left: 27%;
+}
+
+.imgMenu img {
+  width: 300px;
+  height: 300px;
+}
+
+.closeButton {
+  background-color: var(--green-dark-1);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.closeButton svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.closeButton:hover {
+  background-color: red;
+  transition: 0.2s;
 }

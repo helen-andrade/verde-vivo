@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import "./styles.css";
-import otherImages from "../../assets/salad2/05.png";
+import backgroundImage from "../../assets/+pedidas/05.png";
 import Footer from "../../components/Footer/Footer";
 
 const HomePage = () => {
@@ -25,7 +25,11 @@ const HomePage = () => {
             <a href="/Menu">Fazer pedido</a>
           </div>
         </div>
-        <img className="imageHome" src={otherImages} alt="Imagem de vegetais" />
+        <img
+          className="imageHome"
+          src={backgroundImage}
+          alt="Imagem de vegetais"
+        />
       </div>
       <Footer />
     </div>
