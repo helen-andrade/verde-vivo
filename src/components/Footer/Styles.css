@@ -116,15 +116,40 @@ button {
   align-items: center;
 }
 
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.modalHeader h2 {
+  font-size: 22px;
+}
+
+.modalHeader button {
+  margin-left: 450px;
+}
+
 .closeModalButton {
-  border: none;
   background-color: var(--green-dark-1);
-  box-shadow: 0 0 2px var(--beige-1);
-  padding: 5px;
-  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.closeModalButton svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
 }
 
 .closeModalButton:hover {
-  color: #ff0000;
-  transition: 0.4s;
+  background-color: #ff0000;
+  transition: 0.2s;
 }
