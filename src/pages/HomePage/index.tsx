@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import "./styles.css";
-import backgroundImage from "../../assets/+pedidas/05.png";
+import backgroundImage from "../../assets/most-requested/05.png";
 import Footer from "../../components/Footer/Footer";
 
 const HomePage = () => {

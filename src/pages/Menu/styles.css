@@ -156,7 +156,6 @@
 .svgIcon:hover {
   transform: scale(1.3);
   background-color: transparent;
-
 }
 
 .valueDish {
@@ -173,6 +172,23 @@
 
 .valueDish > p {
   margin-top: 40px;
+}
+
+.dishInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.valueDish {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.svgButtonCar {
+  margin-left: 10px;
 }
 
 @keyframes fadeIn {
