@@ -2,6 +2,10 @@ import "./Styles.css";
 import imgTitle from "../../assets/ImageTitle/cha-verde.png";
 
 const Navbar = () => {
+  function handleOpenCartModal() {
+    alert("Abre modal com itens do carrinho");
+  }
+
   return (
     <div className="navbar">
       <div className="titleAndImage">
@@ -27,7 +31,7 @@ const Navbar = () => {
         <a href="/Contacts">
           <li>Contatos</li>
         </a>
-        <button className="svgButtonCarNavbar">
+        <button className="svgButtonCarNavbar" onClick={handleOpenCartModal}>
           <svg
             className="svgIcon"
             xmlns="http://www.w3.org/2000/svg"
