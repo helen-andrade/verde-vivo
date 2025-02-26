@@ -1,74 +1,74 @@
 :root {
-    --green-light-1: #a8e6cf;
-    --green-light-2: #c5e8a9;
-    --green-dark-1: #4caf50;
-    --green-dark-2: #426b1f;
-    --green-dark-3: #388e3c;
+  --green-light-1: #a8e6cf;
+  --green-light-2: #c5e8a9;
+  --green-dark-1: #4caf50;
+  --green-dark-2: #426b1f;
+  --green-dark-3: #388e3c;
 
-    --beige-1: #f1f1f1;
-    --beige-2: #ffffff;
-    --beige-3: #e6e6e6;
-    --beige-4: #fff8e1;
-    --beige-5: #fefefe;
+  --beige-1: #f1f1f1;
+  --beige-2: #ffffff;
+  --beige-3: #e6e6e6;
+  --beige-4: #fff8e1;
+  --beige-5: #fefefe;
 
-    --orange: #ff9800;
-    --yellow: #ffc107;
+  --orange: #ff9800;
+  --yellow: #ffc107;
 
-    --blue-light-1: #81d4fa;
-    --blue-light-2: #b3e5fc;
+  --blue-light-1: #81d4fa;
+  --blue-light-2: #b3e5fc;
 
-    --gray-light-1: #e0e0e0;
-    --gray-light-2: #b0bec5;
+  --gray-light-1: #e0e0e0;
+  --gray-light-2: #b0bec5;
 }
 
 .homeContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
 }
 
 .textHomePage {
-    font-size: 23px;
-    text-align: center;
-    width: 45%;
-    padding: 20px;
-    margin-left: 50px;
-    color: var(--green-dark-1);
+  font-size: 23px;
+  text-align: center;
+  width: 45%;
+  padding: 20px;
+  margin-left: 50px;
+  color: var(--green-dark-1);
 }
 
 .firstText {
-    font-size: 50px;
-    margin-bottom: 10px;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .titleText {
-    color: var(--green-dark-1);
-    font-weight: bold;
+  color: var(--green-dark-1);
+  font-weight: bold;
 }
 
 .imageHome {
-    width: 900px;
-    border-radius: 50%;
-    margin-top: 100px;
+  width: 900px;
+  border-radius: 50%;
+  margin-top: 100px;
 }
 
 .place-order-button,
 .place-order-button a {
-    border: none;
-    text-decoration: none;
-    color: var(--green-dark-1);
-    font-size: 25px;
-    cursor: pointer;
-    padding: 10px;
-    background-color: transparent;
-    margin-top: 50px;
+  border: none;
+  text-decoration: none;
+  color: var(--green-dark-1);
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  margin-top: 50px;
 }
 
 .place-order-button a {
-    box-shadow: 0 0 2px var(--green-dark-1);
+  box-shadow: 0 0 2px var(--green-dark-1);
 }
 
 .place-order-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }

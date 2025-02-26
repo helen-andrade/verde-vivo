@@ -64,10 +64,19 @@ div .navbar {
   text-decoration: none;
   color: var(--green-dark-1);
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 10px;
 }
 
 .navbarContainer a:hover {
   color: var(--green-dark-2);
+}
+
+.svgButtonCarNavbar {
+  border: none;
+  background: none;
+  margin-left: 90px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }

@@ -2,37 +2,111 @@ import { useState } from "react";
 import "./styles.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import img1 from "../../assets/saladaProteica/01.jpg";
-import img2 from "../../assets/saladaProteica/02.jpg";
-import img3 from "../../assets/saladaProteica/03.jpg";
-import img4 from "../../assets/saladaProteica/04.jpg";
-import img5 from "../../assets/saladaProteica/05.jpg";
+import img1 from "../../assets/protein-salad/01.jpg";
+import img2 from "../../assets/protein-salad/02.jpg";
+import img3 from "../../assets/protein-salad/03.jpg";
+import img4 from "../../assets/protein-salad/04.jpg";
+import img5 from "../../assets/protein-salad/05.jpg";
 
-const Menu = () => {
-  const [menuModal, setMenuModal] = useState(false);
+import img6 from "../../assets/protein/01.jpg";
+import img7 from "../../assets/protein/02.jpg";
+import img8 from "../../assets/protein/03.jpg";
+import img9 from "../../assets/protein/04.jpg";
+import img10 from "../../assets/protein/05.jpg";
 
-  const openMenuModal = () => {
-    setMenuModal(true);
-    document.body.classList.add("modal-open");
-  };
+import img11 from "../../assets/green-juice/01.jpg";
+import img12 from "../../assets/green-juice/02.jpg";
+import img13 from "../../assets/green-juice/03.jpg";
+import img14 from "../../assets/green-juice/04.jpg";
+import img15 from "../../assets/green-juice/05.jpg";
 
-  const closeMenuModal = () => {
-    setMenuModal(false);
-    document.body.classList.remove("modal-open");
-  };
+import img16 from "../../assets/rice/01.jpg";
+import img17 from "../../assets/rice/02.jpg";
+import img18 from "../../assets/rice/03.jpg";
+import img19 from "../../assets/rice/04.jpg";
+import img20 from "../../assets/rice/05.jpg";
 
-  const dishes = [
+import img21 from "../../assets/most-requested/01.jpg";
+import img22 from "../..//assets/most-requested/02.jpg";
+import img23 from "../../assets/most-requested/03.jpg";
+import img24 from "../../assets/most-requested/05.png";
+import img25 from "../../assets/most-requested/06.jpg";
+
+const menuItems = {
+  Saladas: [
     { id: 1, img: img1, price: "R$27,90" },
     { id: 2, img: img2, price: "R$12,90" },
     { id: 3, img: img3, price: "R$17,90" },
     { id: 4, img: img4, price: "R$25,00" },
     { id: 5, img: img5, price: "R$32,50" },
-    { id: 6, img: img1, price: "R$27,90" },
-    { id: 7, img: img2, price: "R$12,90" },
-    { id: 8, img: img3, price: "R$17,90" },
-    { id: 9, img: img4, price: "R$25,00" },
-    { id: 10, img: img5, price: "R$32,50" },
-  ];
+    { id: 1, img: img1, price: "R$27,90" },
+    { id: 2, img: img2, price: "R$12,90" },
+    { id: 3, img: img3, price: "R$17,90" },
+    { id: 4, img: img4, price: "R$25,00" },
+    { id: 5, img: img5, price: "R$32,50" },
+  ],
+  Proteínas: [
+    { id: 6, img: img6, price: "R$27,90" },
+    { id: 7, img: img7, price: "R$12,90" },
+    { id: 8, img: img8, price: "R$17,90" },
+    { id: 9, img: img9, price: "R$25,00" },
+    { id: 10, img: img10, price: "R$32,50" },
+    { id: 6, img: img6, price: "R$27,90" },
+    { id: 7, img: img7, price: "R$12,90" },
+    { id: 8, img: img8, price: "R$17,90" },
+    { id: 9, img: img9, price: "R$25,00" },
+    { id: 10, img: img10, price: "R$32,50" },
+  ],
+  "Suco Verde": [
+    { id: 11, img: img11, price: "R$27,90" },
+    { id: 12, img: img12, price: "R$12,90" },
+    { id: 13, img: img13, price: "R$17,90" },
+    { id: 14, img: img14, price: "R$25,00" },
+    { id: 15, img: img15, price: "R$32,50" },
+    { id: 11, img: img11, price: "R$27,90" },
+    { id: 12, img: img12, price: "R$12,90" },
+    { id: 13, img: img13, price: "R$17,90" },
+    { id: 14, img: img14, price: "R$25,00" },
+    { id: 15, img: img15, price: "R$32,50" },
+  ],
+  Carboidratos: [
+    { id: 16, img: img16, price: "R$27,90" },
+    { id: 17, img: img17, price: "R$12,90" },
+    { id: 18, img: img18, price: "R$17,90" },
+    { id: 19, img: img19, price: "R$25,00" },
+    { id: 20, img: img20, price: "R$32,50" },
+    { id: 16, img: img16, price: "R$27,90" },
+    { id: 17, img: img17, price: "R$12,90" },
+    { id: 18, img: img18, price: "R$17,90" },
+    { id: 19, img: img19, price: "R$25,00" },
+    { id: 20, img: img20, price: "R$32,50" },
+  ],
+  "Saladas Premium": [
+    { id: 21, img: img21, price: "R$27,90" },
+    { id: 22, img: img22, price: "R$12,90" },
+    { id: 23, img: img23, price: "R$17,90" },
+    { id: 24, img: img24, price: "R$25,00" },
+    { id: 25, img: img25, price: "R$32,50" },
+    { id: 21, img: img21, price: "R$27,90" },
+    { id: 22, img: img22, price: "R$12,90" },
+    { id: 23, img: img23, price: "R$17,90" },
+    { id: 24, img: img24, price: "R$25,00" },
+    { id: 25, img: img25, price: "R$32,50" },
+  ],
+};
+
+const Menu = () => {
+  const [menuModal, setMenuModal] = useState({ open: false, category: null });
+
+  const openMenuModal = (category) => {
+    setMenuModal({ open: true, category });
+    document.body.classList.add("modal-open");
+  };
+
+  const closeMenuModal = () => {
+    setMenuModal({ open: false, category: null });
+    document.body.classList.remove("modal-open");
+  };
 
   return (
     <div>
@@ -48,22 +122,14 @@ const Menu = () => {
 
       <div className="menuCategories">
         <div className="categoriesFoods">
-          <button onClick={openMenuModal}>
-            <a href="#">Saladas</a>
-          </button>
-          <button onClick={openMenuModal}>
-            <a href="#">Proteínas</a>
-          </button>
-          <button onClick={openMenuModal}>
-            <a href="#">Suco verde</a>
-          </button>
-          <button onClick={openMenuModal}>
-            <a href="#">Carboidratos</a>
-          </button>
+          {Object.keys(menuItems).map((category) => (
+            <button key={category} onClick={() => openMenuModal(category)}>
+              <a href="#">{category}</a>
+            </button>
+          ))}
         </div>
       </div>
-
-      {menuModal && (
+      {menuModal.open && menuModal.category && (
         <div className="modalOverlay">
           <div className="modalContentMenu">
             <button className="closeButton" onClick={closeMenuModal}>
@@ -77,34 +143,40 @@ const Menu = () => {
               </svg>
             </button>
 
+            <h2 className="modalTitle">{menuModal.category}</h2>
             <div className="imgMenu">
-              {dishes.map((dish) => (
-                <div key={dish.id} className="imgDiv">
-                  <img src={dish.img} alt={`Imagem ${dish.id}`} />
-                  <p className="valueDish">
-                    {dish.price}
-                    <button className="svgButtonCar">
-                      <svg
-                        className="svgIcon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="#4CAF50"
-                      >
-                        <title>Adicionar ao carrinho</title>
-                        <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM7.334 13l.805 2H19a1 1 0 0 0 .928-.629l2.9-7.27A.999.999 0 0 0 21.999 6H5.756L4.896 3.683A1 1 0 0 0 3.956 3H1v2h2.365l3.6 9H7.334z" />
-                      </svg>
-                    </button>
-                  </p>
-                </div>
-              ))}
+              {menuItems[menuModal.category]?.length > 0 ? (
+                menuItems[menuModal.category].map((dish) => (
+                  <div key={dish.id} className="imgDiv">
+                    <img src={dish.img} alt={`Imagem ${dish.id}`} />
+                    <div className="dishInfo">
+                      <p className="valueDish">{dish.price}</p>
+                      <button className="svgButtonCar">
+                        <svg
+                          className="svgIcon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="#4CAF50"
+                        >
+                          <title>Adicionar ao carrinho</title>
+                          <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM7.334 13l.805 2H19a1 1 0 0 0 .928-.629l2.9-7.27A.999.999 0 0 0 21.999 6H5.756L4.896 3.683A1 1 0 0 0 3.956 3H1v2h2.365l3.6 9H7.334z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p className="emptyMessage">
+                  Em breve adicionaremos novos pratos! 🥗
+                </p>
+              )}
             </div>
           </div>
         </div>
       )}
 
-      <div className="menuOptions"></div>
       <Footer />
     </div>
   );
