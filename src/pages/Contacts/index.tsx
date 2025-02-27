@@ -32,7 +32,11 @@ const Contacts = () => {
         >
           <img src="/icons/whatsapp.svg" alt="Whatsapp" />
         </a>
-        <a href="https://criarmeulink.com.br/u/1738760239" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://criarmeulink.com.br/u/1738760239"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="/icons/email.svg" alt="Email" />
         </a>
       </div>

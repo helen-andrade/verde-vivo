@@ -39,7 +39,8 @@
 
 .firstText {
   font-size: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  margin-top: 90px;
 }
 
 .titleText {
@@ -48,9 +49,10 @@
 }
 
 .imageHome {
-  width: 900px;
+  width: 700px;
   border-radius: 50%;
-  margin-top: 100px;
+  margin-top: 90px;
+  margin-bottom: 40px;
 }
 
 .place-order-button,

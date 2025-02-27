@@ -1,10 +1,40 @@
+import { useState } from "react";
 import "./Styles.css";
 import imgTitle from "../../assets/ImageTitle/cha-verde.png";
 
 const Navbar = () => {
-  function handleOpenCartModal() {
-    alert("Abre modal com itens do carrinho");
-  }
+  const [isCartModalOpen, setIsCartModalOpen] = useState(false);
+
+  const handleOpenCartModal = () => setIsCartModalOpen(true);
+  const handleCloseCartModal = () => setIsCartModalOpen(false);
+
+  const ModalItensCar = ({
+    isOpen,
+    onClose,
+  }: {
+    isOpen: boolean;
+    onClose: () => void;
+  }) => {
+    if (!isOpen) return null;
+
+    return (
+      <div className="modal-overlay">
+        <div className="modal-content">
+          <h2>Itens do seu carrinho</h2>
+          <button className="closeButtonModalCar" onClick={onClose}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+            >
+              <path d="m16.535,8.172l-3.828,3.828 3.828,3.828-.707.707-3.828-3.828-3.828,3.828-.707-.707,3.828-3.828-3.828-3.828.707-.707,3.828,3.828,3.828-3.828.707.707Zm7.465,3.828c0,6.617-5.383,12-12,12S0,18.617,0,12,5.383,0,12,0s12,5.383,12,12Zm-1,0c0-6.065-4.935-11-11-11S1,5.935,1,12s4.935,11,11,11,11-4.935,11-11Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="navbar">
@@ -12,11 +42,7 @@ const Navbar = () => {
         <h1 className="title">
           <a href="/">VerdeVivo</a>
         </h1>
-        <img
-          className="imgHome"
-          src={imgTitle}
-          alt="Imagem da sombra de um rosto próximo a uma rosa"
-        />
+        <img className="imgHome" src={imgTitle} alt="Imagem de um ramo" />
       </div>
       <ul className="navbarContainer">
         <a href="/">
@@ -45,6 +71,8 @@ const Navbar = () => {
           </svg>
         </button>
       </ul>
+
+      <ModalItensCar isOpen={isCartModalOpen} onClose={handleCloseCartModal} />
     </div>
   );
 };

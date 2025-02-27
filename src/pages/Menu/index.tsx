@@ -1,3 +1,10 @@
+/*
+
+Aicionar toasts 
+Criar modal para produtos adicionados ao carrinho
+
+*/
+
 import { useState } from "react";
 import "./styles.css";
 import Navbar from "../../components/Navbar/Navbar";
