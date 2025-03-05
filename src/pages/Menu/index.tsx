@@ -1,10 +1,3 @@
-/*
-
-Aicionar toasts 
-Criar modal para produtos adicionados ao carrinho
-
-*/
-
 import { useState } from "react";
 import "./styles.css";
 import Navbar from "../../components/Navbar/Navbar";
@@ -34,7 +27,7 @@ import img22 from "../../assets/most-requested/02.jpg";
 import img23 from "../../assets/most-requested/03.jpg";
 import img24 from "../../assets/most-requested/05.png";
 import img25 from "../../assets/most-requested/06.jpg";
-
+import { ToastContainer, toast } from "react-toastify";
 interface MenuItem {
   id: number;
   img: string;
@@ -101,7 +94,7 @@ const Menu = () => {
   };
 
   const handleAddToCart = () => {
-    alert("Add to cart");
+    toast.success("Produto adicionado ao carrinho!");
   };
 
   return (
@@ -163,6 +156,7 @@ const Menu = () => {
                           <title>Adicionar ao carrinho</title>
                           <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM7.334 13l.805 2H19a1 1 0 0 0 .928-.629l2.9-7.27A.999.999 0 0 0 21.999 6H5.756L4.896 3.683A1 1 0 0 0 3.956 3H1v2h2.365l3.6 9H7.334z" />
                         </svg>
+                        <ToastContainer className="toastConfirmAddCar" />
                       </button>
                     </div>
                   </div>

@@ -194,6 +194,10 @@
   background-color: transparent;
 }
 
+.toastConfirmAddCar {
+  font-size: 17px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
